@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Con Filtro</title>
+</head>
+    <body>
+
+        <form>
+
+            <label for="texto">Texto:</label> <!--"El FOR Me asocia con una etiqueta de id texto"-->
+            <input type="text" id="texto" name="texto" placeholder="nombre/direccion">
+
+            <label for="barrio">Barrio:</label>
+            <select name="barrio" id="barrio">
+                <option value="1">Nueva Cordoba</option>
+                <option value="2">Centro</option>
+                <option value="3">ZAMPACHOIDE</option>
+                <option value="4">San Vicente</option>
+            </select>
+
+            <label for="inactiva">Incluir estaciones inactivas</label>
+            <input type="checkbox" id="inactiva" name="inactiva">
+
+            <button type="submit">Filtrar</button>
+
+        </form>
+
+        <table border=""> <!--Hago una tabla con bordes-->
+            <thead> <!--Encabezado de la tabla-->
+                <tr> <!--Crea una linea completa, dentro del encabezado-->
+
+                    <th>nro</th> <!--Dentro de las filas hago columnas-->
+                    <th>Nombre</th>
+                    <th>Barrio</th>
+                    <th>Activa</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>124</td> <!--Dentro de la linea pongo datos-->
+                    <td>miqueas</td>
+                    <td>Nueva Cordoba</td>
+                    <td>NO</td>
+                </tr>
+
+                <tr>
+                    <td>999</td>
+                    <td>ian</td>
+                    <td>Centro</td>
+                    <td>SI</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>33</td>
+                    <td>pechu</td>
+                    <td>ZAMPACHOIDE</td>
+                    <td>CASI</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>420</td>
+                    <td>miguel</td>
+                    <td>San Vicente</td>
+                    <td>Obvio</td>
+                    
+                </tr>
+            </tbody>
+    
+        </table>
+    
+    </body>
+</html>
